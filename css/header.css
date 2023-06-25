@@ -1,0 +1,55 @@
+@import url(reset.css);
+
+header {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  margin-block-end: 1rem;
+}
+header a {
+  text-decoration: none;
+
+  border-radius: 100vh;
+  color: currentColor;
+  padding: 0.5rem 1rem;
+}
+header > a:hover {
+  background: #111;
+}
+
+.options-wrapper {
+  position: relative;
+}
+.options-wrapper:hover .open-options {
+  display: block;
+  display: flex;
+}
+.open-options {
+  background: #333;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 9000000;
+  left: -100%;
+  top: 100%;
+  white-space: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  display: none;
+}
+.open-options a {
+  text-transform: capitalize;
+  color: currentColor;
+}
+.open-options a:hover {
+  background: #111;
+}
+.options-wrapper:hover .close-options {
+  background: red;
+}

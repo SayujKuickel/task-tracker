@@ -1,0 +1,44 @@
+body {
+  color: white;
+  background: black;
+}
+.index form {
+  padding: 1rem 2rem;
+  margin-block-start: 2rem;
+  width: 40vw;
+  background: #222;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.index form > * {
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.index form > *:hover,
+.index form > *:focus {
+  padding: 0.5rem;
+  background: rgb(27, 27, 27);
+  color: white;
+  border: 0;
+  outline: 1px solid rgba(255, 217, 0, 0.151);
+  border-radius: 0.5rem;
+}
+.index form > *::placeholder {
+  color: white;
+}
+.index form button {
+  background: mediumpurple;
+  margin: 1rem;
+}
+.index form button:focus,
+.index form button:hover {
+  background: palevioletred;
+  outline: 0;
+  cursor: pointer;
+}
